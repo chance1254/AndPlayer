@@ -95,13 +95,13 @@ public class FFMpeg {
 	}
     
     public void setConfig(FFMpegConfig config) {
-    	setFrameSize(config.resolution[0], config.resolution[1]);
-		setAudioChannels(config.audioChannels);
-		setAudioRate(config.audioRate);
-		setFrameRate(config.frameRate);
-		setVideoCodec(config.codec);
-		setFrameAspectRatio(config.ratio[0], config.ratio[1]);
-		setBitrate(config.bitrate);
+    	setFrameSize(config.getResolution()[0], config.getResolution()[1]);
+		setAudioChannels(config.getAudioChannels());
+		setAudioRate(config.getAudioRate());
+		setFrameRate(config.getFrameRate());
+		setVideoCodec(config.getCodec());
+		setFrameAspectRatio(config.getRatio()[0], config.getRatio()[1]);
+		setBitrate(config.getBitrate());
 		
 		native_av_parse_options(new String[] {"ffmpeg", mOutputFile.getFile().getAbsolutePath()});
     }
