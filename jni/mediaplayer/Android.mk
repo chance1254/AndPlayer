@@ -12,7 +12,8 @@ LOCAL_SRC_FILES += \
 	source/packetqueue.cpp \
 	source/decoder.cpp \
 	source/decoder_audio.cpp \
-	source/decoder_video.cpp
+	source/decoder_video.cpp \
+	source/mediaplayer.cpp
 
 LOCAL_STATIC_LIBRARIES := libavcodec libavfilter libavformat libavutil libswresample libswscale
 
