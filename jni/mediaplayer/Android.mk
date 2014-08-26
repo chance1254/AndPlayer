@@ -14,7 +14,9 @@ LOCAL_SRC_FILES += \
 	source/decoder_audio.cpp \
 	source/decoder_video.cpp \
 	source/mediaplayer.cpp \
-	source/android_surface.cpp
+	source/android_surface.cpp \
+	source/time_source.cpp \
+	source/video_output.cpp
 
 LOCAL_STATIC_LIBRARIES := libavcodec libavfilter libavformat libavutil libswresample libswscale
 

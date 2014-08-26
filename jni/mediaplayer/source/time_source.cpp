@@ -8,6 +8,9 @@ extern "C" {
 } // end of extern C
 
 #include "../include/time_source.h"
+#include <libavformat/avformat.h>
+#include "libavutil/time.h"
+#include <time.h>
 
 namespace ffmpeg {
 
@@ -25,7 +28,8 @@ double SystemTimeSource::getRealTime()
 // static
 double SystemTimeSource::GetSystemTime()
 {
-    return av_gettime() / 1000000.0;
+    time_t systime;
+	time(&systime);//TODO maybe av_gettime
 }
 
 }  // namespace ffmpeg

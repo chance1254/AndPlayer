@@ -140,9 +140,12 @@ public:
 	void                  notify(int msg, int ext1, int ext2);
 	status_t 		      suspend();
 	status_t        	  resume();
+	status_t              setVideoFrameDrop(int level);
+	inline int         	  videoFrameDrop() { return _videoFrameDrop; }
 private:
 	status_t 		      prepareAudio();
 	status_t		      prepareVideo();
+	int 				  _videoFrameDrop;
 	bool			      shouldCancel(PacketQueue* queue);
 	static void		      ffmpegNotify(void* ptr, int level, const char* fmt, va_list vl);
 	static void*	      startPlayer(void* ptr);
