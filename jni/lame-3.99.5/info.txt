@@ -1,0 +1,1 @@
+--disable-nasm --disable-rpath --disable-decoder --extra-cflags= --extra-ldflags=
