@@ -16,7 +16,7 @@ public class FFMpeg {
 	public static final String[] LIBS = new String[] {
 		"jniaudio", 	// used for access to android native AudioTrack class 
 		"jnivideo",
-		"ffmpeg_jni"	// ffmpeg libs compiled to jni lib
+		"ffmpeg-jni"	// ffmpeg libs compiled to jni lib
 	};
 	
 	public static final String[] EXTENSIONS = new String[] {

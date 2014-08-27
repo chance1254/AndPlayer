@@ -5,10 +5,12 @@ LOCAL_CFLAGS := -D__STDC_CONSTANT_MACROS
 LOCAL_LDLIBS := -llog
 
 LOCAL_C_INCLUDES += \
-    $(LOCAL_PATH)/include
+    $(LOCAL_PATH)/include \
+    $(LOCAL_PATH)/../libavdevice
 
 LOCAL_SRC_FILES += \
 	source/onLoad.cpp \
+	source/com_media_ffmpeg_FFMpeg.c \
     source/com_media_ffmpeg_FFMpegAVFrame.cpp \
     source/com_media_ffmpeg_FFMpegAVInputFormat.c \
     source/com_media_ffmpeg_FFMpegAVRational.c \
