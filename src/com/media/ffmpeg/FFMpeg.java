@@ -14,8 +14,14 @@ import com.media.ffmpeg.config.FFMpegConfig;
 public class FFMpeg {
 	
 	public static final String[] LIBS = new String[] {
-		"jniaudio", 	// used for access to android native AudioTrack class 
-		"jnivideo",
+		/*"jniaudio", 	// used for access to android native AudioTrack class 
+		"jnivideo",*/
+		"avutil-52",
+		"avcodec-55",
+		"swresample-0",
+		"avformat-55",
+		"swscale-2",
+		"avfilter-3",
 		"ffmpeg-jni"	// ffmpeg libs compiled to jni lib
 	};
 	
