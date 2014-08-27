@@ -1,6 +1,7 @@
 #ifndef OUTPUT_H_
 #define OUTPUT_H_
 #include "audiotrack.h"
+#include "android_surface.h"
 
 class Output
 {

@@ -8,6 +8,7 @@ LOCAL_C_INCLUDES += \
     $(LOCAL_PATH)/../ffmpeg 
 
 LOCAL_SRC_FILES += \
+    source/utils.cpp \
 	source/thread.cpp \
 	source/packetqueue.cpp \
 	source/decoder.cpp \
@@ -16,7 +17,8 @@ LOCAL_SRC_FILES += \
 	source/mediaplayer.cpp \
 	source/android_surface.cpp \
 	source/time_source.cpp \
-	source/video_output.cpp
+	source/video_output.cpp \
+	source/audio_output.cpp
 
 LOCAL_STATIC_LIBRARIES := libavcodec libavfilter libavformat libavutil libswresample libswscale
 
