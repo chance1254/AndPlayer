@@ -22,7 +22,9 @@ public class FFMpeg {
 		"avformat-55",
 		"swscale-2",
 		"avfilter-3",
-		"ffmpeg-jni"	// ffmpeg libs compiled to jni lib
+		"ffmpeg-jni",
+		"jniaudio",
+		"jnivideo"// ffmpeg libs compiled to jni lib
 	};
 	
 	public static final String[] EXTENSIONS = new String[] {

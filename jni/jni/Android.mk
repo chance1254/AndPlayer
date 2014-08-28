@@ -8,7 +8,7 @@ LOCAL_C_INCLUDES += \
     $(LOCAL_PATH)/include \
     $(LOCAL_PATH)/../libavdevice
 
-LOCAL_SRC_FILES += \
+LOCAL_SRC_FILES := \
 	source/onLoad.cpp \
 	source/com_media_ffmpeg_FFMpeg.c \
     source/com_media_ffmpeg_FFMpegAVFrame.cpp \
@@ -16,9 +16,10 @@ LOCAL_SRC_FILES += \
     source/com_media_ffmpeg_FFMpegAVRational.c \
     source/com_media_ffmpeg_FFMpegAVFormatContext.c \
     source/com_media_ffmpeg_FFMpegAVCodecContext.cpp \
-    source/com_media_ffmpeg_FFMpegUtils.cpp
+    source/com_media_ffmpeg_FFMpegUtils.cpp \
+    source/ffmpegUtils.cpp
 
-LOCAL_STATIC_LIBRARIES := libavcodec libavfilter libavformat libavutil libswresample libswscale
+LOCAL_SHARED_LIBRARIES := libavcodec libavfilter libavformat libavutil libswresample libswscale
 
 LOCAL_MODULE := libffmpeg-jni
 
