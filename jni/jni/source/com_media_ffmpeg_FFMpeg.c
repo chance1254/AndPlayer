@@ -1,4 +1,6 @@
 #include "../include/onLoad.h"
+#include "libavformat/avformat.h"
+#include "libavcodec/avcodec.h"
 
 static JNINativeMethod methods[] = {
 	{ "native_avcodec_register_all", "()V", (void*) avcodec_register_all },
