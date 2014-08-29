@@ -10,14 +10,13 @@ LOCAL_C_INCLUDES += \
 
 LOCAL_SRC_FILES := \
 	source/onLoad.cpp \
-	source/com_media_ffmpeg_FFMpeg.c \
+	source/com_media_ffmpeg_FFMpeg.cpp \
     source/com_media_ffmpeg_FFMpegAVFrame.cpp \
     source/com_media_ffmpeg_FFMpegAVInputFormat.c \
     source/com_media_ffmpeg_FFMpegAVRational.c \
     source/com_media_ffmpeg_FFMpegAVFormatContext.c \
     source/com_media_ffmpeg_FFMpegAVCodecContext.cpp \
-    source/com_media_ffmpeg_FFMpegUtils.cpp \
-    source/ffmpegUtils.cpp
+    source/com_media_ffmpeg_FFMpegUtils.cpp
 
 LOCAL_SHARED_LIBRARIES := libavcodec libavfilter libavformat libavutil libswresample libswscale
 
