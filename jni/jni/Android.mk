@@ -16,7 +16,8 @@ LOCAL_SRC_FILES := \
     source/com_media_ffmpeg_FFMpegAVRational.c \
     source/com_media_ffmpeg_FFMpegAVFormatContext.c \
     source/com_media_ffmpeg_FFMpegAVCodecContext.cpp \
-    source/com_media_ffmpeg_FFMpegUtils.cpp
+    source/com_media_ffmpeg_FFMpegUtils.cpp \
+    source/ffmpegUtils.cpp
 
 LOCAL_SHARED_LIBRARIES := libavcodec libavfilter libavformat libavutil libswresample libswscale
 
