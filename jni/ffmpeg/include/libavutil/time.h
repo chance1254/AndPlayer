@@ -37,4 +37,5 @@ int64_t av_gettime(void);
  * @return zero on success or (negative) error code.
  */
 int av_usleep(unsigned usec);
+
 #endif /* AVUTIL_TIME_H */
